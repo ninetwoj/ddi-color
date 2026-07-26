@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>띠별 행운의 색상 및 컬러 마케팅 분석기 소개</title>
+    <title>띠별 행운의 색상 소개</title>
     <style>
         @page {
             size: A4;
@@ -18,116 +18,128 @@
             padding: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans KR", sans-serif;
             color: #2c3e50;
-            background-color: #fdfbf7;
+            background-color: #f4efe6;
             line-height: 1.7;
             font-size: 10.5pt;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background-color: #fdfbf7;
+            padding: 40px 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            min-height: 100vh;
         }
         .header {
             background-color: #1a2a3a;
             color: #ffffff;
-            padding: 25px 20px;
-            margin: -15mm -12mm 20px -12mm;
+            padding: 30px 25px;
+            margin: -40px -30px 30px -30px;
             border-bottom: 4px solid #d4af37;
         }
         .header h1 {
-            margin: 0 0 8px 0;
-            font-size: 18pt;
+            margin: 0 0 10px 0;
+            font-size: 20pt;
             font-weight: 700;
             color: #ffffff;
             letter-spacing: -0.5px;
         }
         .header p {
             margin: 0;
-            font-size: 10.5pt;
+            font-size: 11pt;
             color: #e0e6ed;
             opacity: 0.9;
         }
         .badge-group {
-            margin-top: 10px;
+            margin-top: 12px;
         }
         .badge {
             display: inline-block;
             background-color: #2c3e50;
             color: #d4af37;
             border: 1px solid #d4af37;
-            padding: 2px 8px;
-            font-size: 8.5pt;
-            border-radius: 3px;
-            margin-right: 5px;
+            padding: 3px 10px;
+            font-size: 9pt;
+            border-radius: 4px;
+            margin-right: 6px;
             font-weight: 600;
         }
         h2 {
-            font-size: 13pt;
+            font-size: 14pt;
             color: #1a2a3a;
             border-left: 4px solid #d4af37;
-            padding-left: 10px;
-            margin-top: 22px;
-            margin-bottom: 10px;
+            padding-left: 12px;
+            margin-top: 30px;
+            margin-bottom: 12px;
             page-break-after: avoid;
         }
         h3 {
-            font-size: 11pt;
+            font-size: 11.5pt;
             color: #2c3e50;
-            margin-top: 14px;
-            margin-bottom: 6px;
+            margin-top: 16px;
+            margin-bottom: 8px;
             page-break-after: avoid;
         }
         p {
             margin-top: 0;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
             text-align: justify;
             word-break: keep-all;
         }
         ul, ol {
             margin-top: 0;
-            margin-bottom: 12px;
-            padding-left: 20px;
+            margin-bottom: 14px;
+            padding-left: 22px;
         }
         li {
-            margin-bottom: 6px;
+            margin-bottom: 8px;
         }
         .highlight-box {
             background-color: #f4efe6;
-            border-left: 3px solid #1a2a3a;
-            padding: 12px 15px;
-            margin: 15px 0;
-            border-radius: 0 4px 4px 0;
+            border-left: 4px solid #1a2a3a;
+            padding: 15px 18px;
+            margin: 20px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .highlight-box p {
+            margin-bottom: 0;
         }
         .link-card {
             background-color: #ffffff;
             border: 1.5px solid #d4af37;
-            border-radius: 6px;
-            padding: 14px 18px;
-            margin: 18px 0;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 22px 0;
             text-align: center;
+            box-shadow: 0 2px 8px rgba(212, 175, 55, 0.15);
         }
         .link-card a {
             color: #1a2a3a;
             font-weight: bold;
-            font-size: 11pt;
+            font-size: 11.5pt;
             text-decoration: none;
         }
         .link-card p {
-            margin: 4px 0 0 0;
-            font-size: 9pt;
+            margin: 6px 0 0 0;
+            font-size: 9.5pt;
             color: #666666;
             text-align: center;
         }
         .feature-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 15px 0;
+            margin: 20px 0;
             font-size: 9.5pt;
         }
         .feature-table th {
             background-color: #1a2a3a;
             color: #ffffff;
-            padding: 8px 10px;
+            padding: 10px 12px;
             text-align: left;
             border: 1px solid #1a2a3a;
         }
         .feature-table td {
-            padding: 8px 10px;
+            padding: 10px 12px;
             border: 1px solid #e0dcd3;
             background-color: #ffffff;
         }
@@ -135,10 +147,10 @@
             background-color: #fcfbf9;
         }
         .footer {
-            margin-top: 25px;
-            padding-top: 12px;
+            margin-top: 35px;
+            padding-top: 15px;
             border-top: 1px solid #e0dcd3;
-            font-size: 8.5pt;
+            font-size: 9pt;
             color: #7f8c8d;
             text-align: center;
         }
@@ -146,112 +158,114 @@
 </head>
 <body>
 
-<div class="header">
-    <h1>띠별 행운의 색상 & 동양명리학 기반 컬러 솔루션</h1>
-    <p>전통 십이지신 역학과 현대 색채 심리학이 결합된 맞춤형 행운 색상 분석 계산기 서비스 소개</p>
-    <div class="badge-group">
-        <span class="badge">동양명리학</span>
-        <span class="badge">오행(五行) 이론</span>
-        <span class="badge">컬러 심리학</span>
-        <span class="badge">라이프스타일</span>
+<div class="container">
+    <div class="header">
+        <h1>띠별 행운의 색상 & 동양명리학 기반 색상 소개</h1>
+        <p>전통 십이지신 역학과 현대 색채 심리학이 결합된 맞춤형 색상 소개</p>
+        <div class="badge-group">
+            <span class="badge">동양명리학</span>
+            <span class="badge">오행(五行) 이론</span>
+            <span class="badge">컬러 심리학</span>
+            <span class="badge">라이프스타일</span>
+        </div>
     </div>
-</div>
 
-<h2>1. 프로젝트 개요 (Overview)</h2>
-<p>
-    안녕하세요! 현대 직장인과 개인 사업자, 그리고 일상의 소소한 변화를 꿈꾸는 모든 분들을 위한 <strong>'띠별 행운의 색상 계산기'</strong> 프로젝트를 소개합니다. 우리는 매일 아침 옷장을 열 때, 중요한 비즈니스 미팅을 준비할 때, 혹은 신규 브랜드의 아이덴티티 컬러를 선정할 때 "오늘, 그리고 나에게 가장 잘 어울리고 기운을 북돋아 줄 색상은 무엇일까?"라는 고민을 하곤 합니다.
-</p>
-<p>
-    상담모아에서 제공하는 본 서비스는 단순히 재미로 보는 운세를 넘어, 동양의 고전 철학인 <strong>명리학(命理學)</strong>과 <strong>오행(五行)</strong>의 균형 이론을 체계적으로 해석하여 개인 맞춤형 행운의 컬러를 제시합니다. 나아가 현대 색채 심리학과의 융합을 통해 실생활, 패션, 인테리어, 마케팅에 즉시 적용 가능한 실용적인 가이드를 제공하는 라이프스타일 테크 솔루션입니다.
-</p>
-
-<h2>2. 동양 오행(五行)과 색채 체계의 전문적 원리</h2>
-<p>
-    동양 전통 철학에서 우주 만물은 <strong>목(木), 화(火), 토(土), 금(金), 수(水)</strong>의 다섯 가지 기운으로 이루어져 있으며, 각 기운은 고유한 상징 색상과 에너지를 지닙니다. 십이지(十二支) 띠 역시 각각 독자적인 오행 특성을 내포하고 있습니다.
-</p>
-<ul>
-    <li><strong>목(木) - 청색/녹색계열:</strong> 성장을 상징하며 쥐, 범, 토끼 띠의 창의성과 새로운 시작을 돕습니다.</li>
-    <li><strong>화(火) - 적색/분홍계열:</strong> 열정과 확장을 나타내며 뱀, 말 띠의 명예운과 에너지를 끌어올립니다.</li>
-    <li><strong>토(土) - 황색/브라운계열:</strong> 포용과 안정을 의미하며 소, 진(용), 미(양), 술(개) 띠의 신뢰도와 중심을 잡아줍니다.</li>
-    <li><strong>금(金) - 백색/실버계열:</strong> 결단과 결실을 뜻하며 원숭이, 닭 띠의 직관력과 재물운을 강화합니다.</li>
-    <li><strong>수(水) - 흑색/네이비계열:</strong> 지혜와 유연함을 의미하며 돼지 띠의 통찰력과 정서적 안정을 지원합니다.</li>
-</ul>
-<p>
-    본 계산기 알고리즘은 사용자의 출생 연도와 띠에 내재된 오행의 강약 및 상생(相生)·상극(相剋) 관계를 다각도로 분석합니다. 나를 상극하는 기운은 완화하고, 부족한 기운은 색채를 통해 보완(상생)함으로써 개인의 운성 에너지를 한 단계 끌어올리는 원리로 작동합니다.
-</p>
-
-<div class="link-card">
-    <a href="https://sangdammoa.com/calculator/ddi-color" target="_blank" rel="noopener noreferrer">
-        🔗 [상담모아] 띠별 행운의 색상 계산기 바로가기 (Click)
-    </a>
-    <p>나의 띠와 오행에 꼭 맞는 맞춤형 컬러 분석을 무료로 지금 바로 확인해보세요!</p>
-</div>
-
-<h2>3. 주요 기능 및 활용 분야</h2>
-<table class="feature-table">
-    <thead>
-        <tr>
-            <th>구분</th>
-            <th>주요 기능 및 효과</th>
-            <th>적용 사례</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><strong>개인 스타일링</strong></td>
-            <td>부족한 오행 에너지를 채워주는 의상 및 액세서리 컬러 추천</td>
-            <td>면접, 중요한 계약, 데이트 시 행운을 부르는 룩북 완성</td>
-        </tr>
-        <tr>
-            <td><strong>공간 인테리어</strong></td>
-            <td>마음의 안정을 주고 집중력을 향상시키는 공간 컬러 배치 가이드</td>
-            <td>침실 침구류, 서재 데스크 소품, 거실 포인트 벽지 색상 선정</td>
-        </tr>
-        <tr>
-            <td><strong>비즈니스 & 브랜딩</strong></td>
-            <td>대표자의 사주·띠 기운과 부합하는 브랜딩 및 퍼스널 컬러 구축</td>
-            <td>명함 디자인, 로고 색상, 웹사이트 메인 컬러 콘셉트 수립</td>
-        </tr>
-        <tr>
-            <td><strong>정서적 힐링</strong></td>
-            <td>색채가 전달하는 파장과 심리적 안정 효과를 통한 스트레스 완화</td>
-            <td>데일리 모바일 배경화면, 소지품(지갑, 다이어리) 색상 활용</td>
-        </tr>
-    </tbody>
-</table>
-
-<div class="highlight-box">
-    <h3>💡 심리적·학술적 가치 (Professional Insights)</h3>
+    <h2>1. 프로젝트 개요 (Overview)</h2>
     <p>
-        색채는 인간의 뇌신경계에 정서적 자극을 주는 물리적 파장입니다. 동양의 명리학적 접근과 현대 뇌과학·컬러테라피 이론이 만났을 때, 개인은 자신의 잠재의식을 긍정적인 방향으로 시각화할 수 있습니다. 즉, 행운의 색상을 가까이하는 행위는 스스로에게 자신감과 긍정적 시그널을 지속적으로 부여하는 뛰어난 '자기효능감(Self-Efficacy) 강화 솔루션'이 됩니다.
+        안녕하세요! 현대 직장인과 개인 사업자, 그리고 일상의 소소한 변화를 꿈꾸는 모든 분들을 위한 <strong>'띠별 행운의 색상 계산기'</strong> 프로젝트를 소개합니다. 우리는 매일 아침 옷장을 열 때, 중요한 비즈니스 미팅을 준비할 때, 혹은 신규 브랜드의 아이덴티티 컬러를 선정할 때 "오늘, 그리고 나에게 가장 잘 어울리고 기운을 북돋아 줄 색상은 무엇일까?"라는 고민을 하곤 합니다.
     </p>
-</div>
+    <p>
+        상담모아에서 제공하는 본 서비스는 단순히 재미로 보는 운세를 넘어, 동양의 고전 철학인 <strong>명리학(命理學)</strong>과 <strong>오행(五行)</strong>의 균형 이론을 체계적으로 해석하여 개인 맞춤형 행운의 컬러를 제시합니다. 나아가 현대 색채 심리학과의 융합을 통해 실생활, 패션, 인테리어, 마케팅에 즉시 적용 가능한 실용적인 가이드를 제공하는 라이프스타일 테크 솔루션입니다.
+    </p>
 
-<h2>4. 친근하게 즐기는 서비스 이용 방법</h2>
-<p>
-    복잡한 사주 만세력을 찾아보거나 한자를 읽지 못해도 전혀 걱정하실 필요가 없습니다! 상담모아 띠별 행운의 색상 계산기는 누구나 간편하고 재미있게 사용할 수 있도록 직관적인 UI/UX로 설계되었습니다.
-</p>
-<ol>
-    <li>서비스 페이지에 접속하여 자신의 태어난 연도 및 띠를 선택합니다.</li>
-    <li>단 한 번의 클릭으로 오행 분석 알고리즘이 가동되어 나의 핵심 기운을 산출합니다.</li>
-    <li>나의 띠와 가장 완벽한 합을 이루는 '메인 행운 컬러'와 '서브 보완 컬러'를 확인합니다.</li>
-    <li>제공되는 컬러 팔레트와 스타일링 팁을 참고하여 일상생활 속 소품이나 코디에 즉시 활용해보세요!</li>
-</ol>
+    <h2>2. 동양 오행(五行)과 색채 체계의 전문적 원리</h2>
+    <p>
+        동양 전통 철학에서 우주 만물은 <strong>목(木), 화(火), 토(土), 금(金), 수(水)</strong>의 다섯 가지 기운으로 이루어져 있으며, 각 기운은 고유한 상징 색상과 에너지를 지닙니다. 십이지(十二支) 띠 역시 각각 독자적인 오행 특성을 내포하고 있습니다.
+    </p>
+    <ul>
+        <li><strong>목(木) - 청색/녹색계열:</strong> 성장을 상징하며 쥐, 범, 토끼 띠의 창의성과 새로운 시작을 돕습니다.</li>
+        <li><strong>화(火) - 적색/분홍계열:</strong> 열정과 확장을 나타내며 뱀, 말 띠의 명예운과 에너지를 끌어올립니다.</li>
+        <li><strong>토(土) - 황색/브라운계열:</strong> 포용과 안정을 의미하며 소, 진(용), 미(양), 술(개) 띠의 신뢰도와 중심을 잡아줍니다.</li>
+        <li><strong>금(金) - 백색/실버계열:</strong> 결단과 결실을 뜻하며 원숭이, 닭 띠의 직관력과 재물운을 강화합니다.</li>
+        <li><strong>수(水) - 흑색/네이비계열:</strong> 지혜와 유연함을 의미하며 돼지 띠의 통찰력과 정서적 안정을 지원합니다.</li>
+    </ul>
+    <p>
+        본 계산기 알고리즘은 사용자의 출생 연도와 띠에 내재된 오행의 강약 및 상생(相生)·상극(相剋) 관계를 다각도로 분석합니다. 나를 상극하는 기운은 완화하고, 부족한 기운은 색채를 통해 보완(상생)함으로써 개인의 운성 에너지를 한 단계 끌어올리는 원리로 작동합니다.
+    </p>
 
-<h2>5. 결론 및 바로가기 안내</h2>
-<p>
-    작은 색상의 변화 하나가 하루의 기분을 바꾸고, 그 긍정적인 에너지가 모여 소중한 삶의 기회와 운을 만들어냅니다. 나를 더 빛나게 만들어 줄 특별한 컬러 에너지가 궁금하시다면, 지금 바로 아래의 계산기 서비스를 경험해보시기 바랍니다. 여러분의 매일이 행운과 활력으로 가득 차기를 진심으로 응원합니다.
-</p>
+    <div class="link-card">
+        <a href="https://sangdammoa.com/calculator/ddi-color" target="_blank" rel="noopener noreferrer">
+            🔗 [상담모아] 띠별 행운의 색상 계산기 바로가기 (Click)
+        </a>
+        <p>나의 띠와 오행에 꼭 맞는 맞춤형 컬러 분석을 무료로 지금 바로 확인해보세요!</p>
+    </div>
 
-<div class="link-card">
-    <a href="https://sangdammoa.com/calculator/ddi-color" target="_blank" rel="noopener noreferrer">
-        👉 https://sangdammoa.com/calculator/ddi-color
-    </a>
-    <p>상담모아 띠별 행운의 색상 계산기 - 나의 맞춤형 오행 컬러 보러가기</p>
-</div>
+    <h2>3. 주요 기능 및 활용 분야</h2>
+    <table class="feature-table">
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>주요 기능 및 효과</th>
+                <th>적용 사례</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>개인 스타일링</strong></td>
+                <td>부족한 오행 에너지를 채워주는 의상 및 액세서리 컬러 추천</td>
+                <td>면접, 중요한 계약, 데이트 시 행운을 부르는 룩북 완성</td>
+            </tr>
+            <tr>
+                <td><strong>공간 인테리어</strong></td>
+                <td>마음의 안정을 주고 집중력을 향상시키는 공간 컬러 배치 가이드</td>
+                <td>침실 침구류, 서재 데스크 소품, 거실 포인트 벽지 색상 선정</td>
+            </tr>
+            <tr>
+                <td><strong>비즈니스 & 브랜딩</strong></td>
+                <td>대표자의 사주·띠 기운과 부합하는 브랜딩 및 퍼스널 컬러 구축</td>
+                <td>명함 디자인, 로고 색상, 웹사이트 메인 컬러 콘셉트 수립</td>
+            </tr>
+            <tr>
+                <td><strong>정서적 힐링</strong></td>
+                <td>색채가 전달하는 파장과 심리적 안정 효과를 통한 스트레스 완화</td>
+                <td>데일리 모바일 배경화면, 소지품(지갑, 다이어리) 색상 활용</td>
+            </tr>
+        </tbody>
+    </table>
 
-<div class="footer">
-    <p>© Sangdammoa Color Analytics Project. All rights reserved.</p>
+    <div class="highlight-box">
+        <h3>💡 심리적·학술적 가치 (Professional Insights)</h3>
+        <p>
+            색채는 인간의 뇌신경계에 정서적 자극을 주는 물리적 파장입니다. 동양의 명리학적 접근과 현대 뇌과학·컬러테라피 이론이 만났을 때, 개인은 자신의 잠재의식을 긍정적인 방향으로 시각화할 수 있습니다. 즉, 행운의 색상을 가까이하는 행위는 스스로에게 자신감과 긍정적 시그널을 지속적으로 부여하는 뛰어난 '자기효능감(Self-Efficacy) 강화 솔루션'이 됩니다.
+        </p>
+    </div>
+
+    <h2>4. 친근하게 즐기는 서비스 이용 방법</h2>
+    <p>
+        복잡한 사주 만세력을 찾아보거나 한자를 읽지 못해도 전혀 걱정하실 필요가 없습니다! 상담모아 띠별 행운의 색상 계산기는 누구나 간편하고 재미있게 사용할 수 있도록 직관적인 UI/UX로 설계되었습니다.
+    </p>
+    <ol>
+        <li>서비스 페이지에 접속하여 자신의 태어난 연도 및 띠를 선택합니다.</li>
+        <li>단 한 번의 클릭으로 오행 분석 알고리즘이 가동되어 나의 핵심 기운을 산출합니다.</li>
+        <li>나의 띠와 가장 완벽한 합을 이루는 '메인 행운 컬러'와 '서브 보완 컬러'를 확인합니다.</li>
+        <li>제공되는 컬러 팔레트와 스타일링 팁을 참고하여 일상생활 속 소품이나 코디에 즉시 활용해보세요!</li>
+    </ol>
+
+    <h2>5. 결론 및 바로가기 안내</h2>
+    <p>
+        작은 색상의 변화 하나가 하루의 기분을 바꾸고, 그 긍정적인 에너지가 모여 소중한 삶의 기회와 운을 만들어냅니다. 나를 더 빛나게 만들어 줄 특별한 컬러 에너지가 궁금하시다면, 지금 바로 아래의 계산기 서비스를 경험해보시기 바랍니다. 여러분의 매일이 행운과 활력으로 가득 차기를 진심으로 응원합니다.
+    </p>
+
+    <div class="link-card">
+        <a href="https://sangdammoa.com/calculator/ddi-color" target="_blank" rel="noopener noreferrer">
+            👉 https://sangdammoa.com/calculator/ddi-color
+        </a>
+        <p>상담모아 띠별 행운의 색상 계산기 - 나의 맞춤형 오행 컬러 보러가기</p>
+    </div>
+
+    <div class="footer">
+        <p>© Sangdammoa Color Analytics Project. All rights reserved.</p>
+    </div>
 </div>
 
 </body>
